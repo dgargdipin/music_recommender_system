@@ -5,7 +5,7 @@ import requests
 from urllib.parse import quote
 import dotenv
 import os
-from recommender import getPandasFrame
+from recommender import getPandasFrame, recommend_songs
 # Authentication Steps, paramaters, and responses are defined at https://developer.spotify.com/web-api/authorization-guide/
 # Visit this url to see all the steps, parameters, and expected response.
 
@@ -44,6 +44,7 @@ class Timerange(enum.Enum):
 
 def get_profile_data(auth_headers):
     profile_response = requests.get(user_profile_api_endpoint, headers=auth_headers)
+    print(profile_response.text)
     return json.loads(profile_response.text)
 
 
@@ -102,7 +103,7 @@ def get_top_songs(auth_headers,timerange=Timerange.MEDIUM_TERM):
     with open('response_list','w') as f:
         f.write(str(type(response_list)))
         f.write(str(response_list))
-    getPandasFrame(response_list)
+    
     return response_list
 
 
@@ -150,9 +151,9 @@ def callback():
     top_songs = get_top_songs(auth_headers=authorization_header)
     with open("data.json", "w") as f:
         json.dump(top_songs, f)
-
+    rec_songs=recommend_songs(top_songs)
     # Combine profile and playlist data to display
-    display_arr = [profile_data] + [top_songs]
+    display_arr = [profile_data] + [rec_songs]
     return render_template("index.html", sorted_array=display_arr)
 
 
