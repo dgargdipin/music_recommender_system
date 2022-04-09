@@ -6,6 +6,7 @@ __pycache__/
 # C extensions
 *.so
 temp/
+*:Zone.Identifier
 # Distribution / packaging
 .Python
 build/
