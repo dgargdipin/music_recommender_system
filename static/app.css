@@ -1,0 +1,1368 @@
+/*! CSS Used from: Embedded */
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+
+.svg-inline--fa.fa-w-16 {
+    width: 1em;
+}
+
+/*! CSS Used from: https://www.noiseblend.com/static/css/bootstrap.css */
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+aside,
+nav {
+    display: block;
+}
+
+body {
+    margin: 0;
+    font-family: Mukta, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #fafafa;
+    background-color: #111;
+}
+
+h1,
+h2,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -.5em;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):focus {
+    outline: 0;
+}
+
+a:not([href]):not([tabindex]):focus,
+a:not([href]):not([tabindex]):hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+a,
+button,
+input {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+}
+
+button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+input,
+button {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button {
+    text-transform: none;
+}
+
+button {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}
+
+h1,
+h2,
+h5,
+h6 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+@media (min-width:768px) {
+    .d-md-block {
+        display: block !important;
+    }
+}
+
+.flex-row {
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+}
+
+.flex-column {
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+}
+
+.flex-grow-1 {
+    flex-grow: 1 !important;
+}
+
+.justify-content-start {
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+}
+
+.justify-content-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+
+.justify-content-between {
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+}
+
+.align-items-start {
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+}
+
+.align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.w-75 {
+    width: 75% !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.my-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.ml-1 {
+    margin-left: .25rem !important;
+}
+
+.mx-1 {
+    margin-right: .25rem !important;
+    margin-left: .25rem !important;
+}
+
+.mr-2 {
+    margin-right: .5rem !important;
+}
+
+.ml-2 {
+    margin-left: .5rem !important;
+}
+
+.mx-2 {
+    margin-right: .5rem !important;
+    margin-left: .5rem !important;
+}
+
+.my-2 {
+    margin-top: .5rem !important;
+    margin-bottom: .5rem !important;
+}
+
+.mr-3 {
+    margin-right: 1rem !important;
+}
+
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.ml-4 {
+    margin-left: 1.5rem !important;
+}
+
+.my-4 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.mb-5 {
+    margin-bottom: 3rem !important;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.px-0 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.py-0 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.p-1 {
+    padding: .25rem !important;
+}
+
+.px-1 {
+    padding-right: .25rem !important;
+    padding-left: .25rem !important;
+}
+
+.px-2 {
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+}
+
+.py-2 {
+    padding-top: .5rem !important;
+    padding-bottom: .5rem !important;
+}
+
+.py-3 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.m-auto {
+    margin: auto !important;
+}
+
+.mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+@media (min-width:768px) {
+    .ml-md-4 {
+        margin-left: 1.5rem !important;
+    }
+
+    .px-md-3 {
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+    }
+
+    .px-md-4 {
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
+    }
+}
+
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-light {
+    color: #f8f9fa !important;
+}
+
+/*! CSS Used from: https://www.noiseblend.com/static/css/app.css */
+body,
+input,
+button {
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: auto;
+    font-family: Mukta, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+h1,
+h2,
+h5,
+h6,
+th,
+.font-heading {
+    font-family: Futura, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+button.disabled {
+    cursor: auto !important;
+}
+
+button {
+    font-weight: 500;
+    transition: all .2s cubic-bezier(.215, .61, .355, 1);
+    outline: none;
+}
+
+button:hover,
+button:focus,
+button:active {
+    outline: none !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+.layout-container {
+    margin: 0;
+    padding: 0;
+}
+
+.h-100vh {
+    height: 100vh !important;
+}
+
+:root {
+    --ease-in-quad: cubic-bezier(.55, .085, .68, .53);
+    --ease-in-cubic: cubic-bezier(.55, .055, .675, .19);
+    --ease-in-quart: cubic-bezier(.895, .03, .685, .22);
+    --ease-in-quint: cubic-bezier(.755, .05, .855, .06);
+    --ease-in-expo: cubic-bezier(.95, .05, .795, .035);
+    --ease-in-circ: cubic-bezier(.6, .04, .98, .335);
+    --ease-out-quad: cubic-bezier(.25, .46, .45, .94);
+    --ease-out-cubic: cubic-bezier(.215, .61, .355, 1);
+    --ease-out-quart: cubic-bezier(.165, .84, .44, 1);
+    --ease-out-quint: cubic-bezier(.23, 1, .32, 1);
+    --ease-out-expo: cubic-bezier(.19, 1, .22, 1);
+    --ease-out-circ: cubic-bezier(.075, .82, .165, 1);
+    --ease-in-out-quad: cubic-bezier(.455, .03, .515, .955);
+    --ease-in-out-cubic: cubic-bezier(.645, .045, .355, 1);
+    --ease-in-out-quart: cubic-bezier(.77, 0, .175, 1);
+    --ease-in-out-quint: cubic-bezier(.86, 0, .07, 1);
+    --ease-in-out-expo: cubic-bezier(1, 0, 0, 1);
+    --ease-in-out-circ: cubic-bezier(.785, .135, .15, .86);
+}
+
+.fill-window {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*! CSS Used from: Embedded */
+button.jsx-23282708 {
+    -webkit-appearance: none;
+    outline: none;
+    -webkit-transition: color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -moz-transition: color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -o-transition: color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -ms-transition: color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    transition: color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    background-color: transparent;
+    color: rgb(250, 250, 250);
+    cursor: pointer;
+    border-color: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+button.jsx-23282708:hover {
+    filter: brightness(110%);
+    color: rgb(5, 5, 5);
+}
+
+/*! CSS Used from: Embedded */
+.alert.jsx-2770720718 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 50px;
+    -webkit-transition: color 0.4s cubic-bezier(0.19, 1, 0.22, 1) 0s, background-color 0.4s cubic-bezier(0.19, 1, 0.22, 1) 0s, -webkit-transform 0.4s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    -moz-transition: color 0.4s cubic-bezier(0.19, 1, 0.22, 1) 0s, background-color 0.4s cubic-bezier(0.19, 1, 0.22, 1) 0s, -moz-transform 0.4s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    -o-transition: color 0.4s cubic-bezier(0.19, 1, 0.22, 1) 0s, background-color 0.4s cubic-bezier(0.19, 1, 0.22, 1) 0s, -o-transform 0.4s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    -ms-transition: color 0.4s cubic-bezier(0.19, 1, 0.22, 1) 0s, background-color 0.4s cubic-bezier(0.19, 1, 0.22, 1) 0s, -ms-transform 0.4s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    transition: color 0.4s cubic-bezier(0.19, 1, 0.22, 1) 0s, background-color 0.4s cubic-bezier(0.19, 1, 0.22, 1) 0s, transform 0.4s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    border-radius: 0;
+    -webkit-box-shadow: 0 3px 10px rgba(28, 28, 28, 0.4);
+    box-shadow: 0 3px 10px rgba(28, 28, 28, 0.4);
+}
+
+.alert.jsx-2770720718 .message.jsx-2770720718 {
+    height: 100%;
+}
+
+/*! CSS Used from: Embedded */
+button.jsx-135949518 {
+    -webkit-appearance: none;
+    outline: none;
+    -webkit-transition: color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -moz-transition: color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -o-transition: color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -ms-transition: color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    transition: color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    background-color: transparent;
+    color: hsl(37.60000000000002, 100%, 50%);
+    cursor: pointer;
+    border-color: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+button.jsx-135949518:hover {
+    filter: brightness(110%);
+    color: rgb(0, 95, 255);
+}
+
+/*! CSS Used from: Embedded */
+html,
+body,
+body>#__next,
+.layout-container {
+    height: inherit;
+    width: inherit;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+html,
+body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background: linear-gradient(to bottom, rgb(28, 28, 28) 0%, hsl(0, 0%, 11.5%) 100%);
+}
+
+/*! CSS Used from: Embedded */
+body {
+    overflow-x: hidden !important;
+}
+
+/*! CSS Used from: Embedded */
+a.jsx-4117022056 {
+    z-index: 1;
+}
+
+a.jsx-4117022056 .brand-image {
+    color: rgb(250, 250, 250);
+    -webkit-transition: color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, fill 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -moz-transition: color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, fill 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -o-transition: color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, fill 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -ms-transition: color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, fill 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    transition: color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, fill 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+a.jsx-4117022056 .brand-image:hover,
+a.jsx-4117022056 .brand-image:focus {
+    color: rgb(255, 181, 0);
+}
+
+/*! CSS Used from: Embedded */
+.rounded-button.jsx-1987321008 {
+    outline: none;
+    -webkit-transition: background-color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, box-shadow 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, width 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, height 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, -webkit-transform 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -moz-transition: background-color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, box-shadow 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, width 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, height 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, -moz-transform 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -o-transition: background-color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, box-shadow 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, width 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, height 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, -o-transform 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -ms-transition: background-color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, box-shadow 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, width 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, height 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, -ms-transform 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    transition: background-color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, box-shadow 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, width 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, height 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, transform 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    background-color: rgb(255, 129, 63);
+    color: rgb(28, 28, 28);
+    border-radius: 100px;
+    cursor: pointer;
+    -webkit-box-shadow: 0 2px 10px rgba(28, 28, 28, 0.4);
+    box-shadow: 0 2px 10px rgba(28, 28, 28, 0.4);
+    border-color: transparent;
+    padding: 1rem 3rem;
+}
+
+.rounded-button.jsx-1987321008:hover,
+.rounded-button.jsx-1987321008:focus {
+    filter: brightness(115%);
+    -webkit-box-shadow: 0 3px 10px rgba(28, 28, 28, 0.5);
+    box-shadow: 0 3px 10px rgba(28, 28, 28, 0.5);
+    background-color: rgb(255, 129, 63);
+    color: rgb(28, 28, 28);
+}
+
+/*! CSS Used from: Embedded */
+.donate-button:hover,
+.donate-button:focus {
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/*! CSS Used from: Embedded */
+.trigger.jsx-1938002294 {
+    cursor: pointer;
+    background: none;
+    border-radius: 100px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 1.5em;
+    position: relative;
+    color: rgba(250, 250, 250, 0.5);
+    -webkit-transition: color 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -moz-transition: color 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -o-transition: color 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -ms-transition: color 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    transition: color 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    width: 60px;
+    height: 60px;
+}
+
+@media (max-width:768px) {
+    .trigger.jsx-1938002294 {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.trigger.jsx-1938002294:hover,
+.trigger.jsx-1938002294:focus {
+    color: #fafafa;
+}
+
+.morph-shape.jsx-1938002294 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.morph-shape.jsx-1938002294 svg.jsx-1938002294 {
+    filter: grayscale(40%) drop-shadow(2px -1px 2px rgba(28, 28, 28, 0.1)) drop-shadow(-1px 2px 2px rgba(28, 28, 28, 0.2));
+    -webkit-transition: filter 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, opacity 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -moz-transition: filter 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, opacity 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -o-transition: filter 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, opacity 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -ms-transition: filter 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, opacity 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    transition: filter 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, opacity 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90);
+}
+
+.morph-shape.jsx-1938002294 svg.jsx-1938002294>#img-overlay-path.jsx-1938002294 {
+    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -moz-transition: -moz-transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -o-transition: -o-transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -ms-transition: -ms-transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    transition: transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.morph-shape.jsx-1938002294:hover #img-overlay-path.jsx-1938002294 {
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -o-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+}
+
+.morph-shape.jsx-1938002294:hover svg.jsx-1938002294,
+.morph-shape.jsx-1938002294 svg.jsx-1938002294:hover {
+    filter: grayscale(0%) drop-shadow(3px -2px 4px rgba(28, 28, 28, 0.3)) drop-shadow(-3px 4px 4px rgba(28, 28, 28, 0.4)) !important;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+}
+
+/*! CSS Used from: Embedded */
+@media (max-width:768px) {
+    #bmac-link {
+        display: none;
+    }
+}
+
+/*! CSS Used from: Embedded */
+.nav-link.jsx-9398181 {
+    color: rgb(250, 250, 250);
+}
+
+/*! CSS Used from: Embedded */
+nav.jsx-2286107519 {
+    z-index: 0;
+    height: 60px;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width:768px) {
+    nav.jsx-2286107519 {
+        height: 50px;
+    }
+}
+
+nav.jsx-2286107519 .nav-link.jsx-2286107519 {
+    font-size: 18px;
+    -webkit-transition: color 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -moz-transition: color 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -o-transition: color 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -ms-transition: color 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    transition: color 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+nav.jsx-2286107519 .nav-link.jsx-2286107519:hover,
+nav.jsx-2286107519 .nav-link.jsx-2286107519:focus {
+    color: #ff293e;
+}
+
+@media (max-width:768px) {
+    nav.jsx-2286107519 .nav-link.jsx-2286107519 {
+        font-size: 15px;
+    }
+}
+
+/*! CSS Used from: Embedded */
+button.jsx-1648806198 {
+    -webkit-appearance: none;
+    outline: none;
+    -webkit-transition: color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -moz-transition: color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -o-transition: color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -ms-transition: color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    transition: color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    background-color: transparent;
+    color: rgb(250, 250, 250);
+    cursor: pointer;
+    border-color: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+button.jsx-1648806198:hover {
+    filter: brightness(110%);
+    color: rgb(250, 250, 250);
+}
+
+/*! CSS Used from: Embedded */
+#app-back-button {
+    display: none !important;
+}
+
+@media (display-mode:fullscreen),
+(display-mode:standalone) {
+    #app-back-button {
+        display: -webkit-box !important;
+        display: -moz-box !important;
+        display: -webkit-flex !important;
+        display: -ms-flexbox !important;
+        display: box !important;
+        display: flex !important;
+    }
+}
+
+/*! CSS Used from: Embedded */
+.undo-button-top {
+    position: fixed;
+    top: -100px;
+    left: calc(50% - 50px);
+    opacity: 0 !important;
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s !important;
+}
+
+.rounded-button.jsx-3472851095 {
+    outline: none;
+    transition: background-color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, box-shadow 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, width 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, height 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, transform 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    background-color: rgb(255, 41, 62);
+    color: rgb(250, 250, 250);
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: rgba(28, 28, 28, 0.4) 0px 2px 10px;
+    border-color: transparent;
+    padding: 1rem 3rem;
+}
+
+.rounded-button.jsx-3472851095:hover,
+.rounded-button.jsx-3472851095:focus {
+    filter: brightness(130%);
+    box-shadow: rgba(28, 28, 28, 0.5) 0px 3px 10px;
+    background-color: rgb(255, 41, 62);
+    color: rgb(250, 250, 250);
+}
+
+.header.jsx-4151063832 {
+    display: grid;
+    grid-template-columns: 7vw 1fr;
+    grid-template-areas: "hashtag name"". hint";
+}
+
+.hashtag.jsx-4151063832,
+.playlist-name.jsx-4151063832 {
+    font-size: calc(22px + 28 * ((100vw - 320px) / 2240));
+}
+
+.hashtag.jsx-4151063832 {
+    grid-area: hashtag / hashtag / hashtag / hashtag;
+}
+
+.playlist-name.jsx-4151063832 {
+    grid-area: name / name / name / name;
+}
+
+.edit-hint.jsx-4151063832 {
+    grid-area: hint / hint / hint / hint;
+}
+
+.playlist-name-input.jsx-4151063832 {
+    color: rgb(250, 250, 250);
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    min-height: 50px;
+    width: calc(100% - 5.5rem);
+    caret-color: rgb(225, 66, 131);
+    text-overflow: ellipsis;
+}
+
+.hashtag.jsx-4151063832,
+.playlist-name.jsx-4151063832 {
+    color: rgb(250, 250, 250);
+    font-weight: bold;
+}
+
+@media (min-width: 992px) {
+    .header.jsx-4151063832 {
+        display: grid;
+        grid-template-columns: 80px 1fr;
+    }
+}
+
+button.jsx-1099357507 {
+    appearance: none;
+    outline: none;
+    transition: color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    background-color: transparent;
+    color: rgb(222, 158, 137);
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+}
+
+button.jsx-1099357507:hover {
+    filter: brightness(110%);
+    color: rgb(222, 158, 137);
+}
+
+button.disabled.jsx-1099357507,
+button.jsx-1099357507:hover.disabled,
+button.jsx-1099357507:focus.disabled {
+    filter: none;
+    cursor: auto;
+    box-shadow: none;
+    color: rgb(136, 136, 136);
+}
+
+.toggle-button.jsx-276172421 {
+    font-weight: bold;
+    outline: none;
+    transition: background-color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, box-shadow 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    background-color: transparent;
+    border: 2px solid rgb(134, 40, 51);
+    color: rgb(134, 40, 51);
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 1rem 3rem;
+}
+
+.toggle-button.toggled.jsx-276172421 {
+    background-color: rgb(134, 40, 51);
+    color: rgb(250, 250, 250);
+}
+
+.toggle-button.toggled.jsx-276172421:hover {
+    filter: brightness(120%);
+}
+
+button.jsx-3978203394 {
+    appearance: none;
+    outline: none;
+    transition: color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    background-color: transparent;
+    color: rgb(250, 250, 250);
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+}
+
+button.jsx-3978203394:hover {
+    filter: brightness(110%) drop-shadow(rgb(225, 66, 131) 0px 0px 1px);
+    color: rgb(225, 66, 131);
+}
+
+button.disabled.jsx-3978203394,
+button.jsx-3978203394:hover.disabled,
+button.jsx-3978203394:focus.disabled {
+    filter: none;
+    cursor: auto;
+    box-shadow: none;
+    color: rgb(68, 68, 68);
+}
+
+.dislike-button {
+    width: 60px;
+    height: 60px;
+    transition: all 0.15s linear 0s;
+    opacity: 1;
+    filter: none;
+    margin: 0px 6px 6px 0px;
+    box-shadow: none;
+    line-height: 1;
+    text-align: center;
+    border-radius: 30px !important;
+    padding: 10px !important;
+}
+
+.dislike-button:focus,
+.dislike-button:active,
+.dislike-button:hover {
+    box-shadow: rgba(28, 28, 28, 0.3) 0px 8px 16px, rgba(28, 28, 28, 0.15) 0px 5px 8px;
+    background-color: rgb(255, 41, 62) !important;
+}
+
+.dislike-button {
+    margin: 0px;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    border-radius: 2rem !important;
+    font-size: 1rem !important;
+}
+
+@media (min-width: 992px) {
+    .playlist-container.jsx-3762652932 {
+        width: 100%;
+    }
+}
+
+.track-table.jsx-3762652932 {
+    position: relative;
+    transition: opacity 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+@media (min-width: 992px) {
+    .track-table.jsx-3762652932 {
+        width: 100%;
+    }
+}
+
+.track-table.jsx-3762652932 thead.jsx-3762652932 tr.jsx-3762652932 th.jsx-3762652932 {
+    color: rgb(225, 66, 131);
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: bold;
+    padding: 20px 10px;
+    text-align: left;
+    vertical-align: middle;
+    transition: width 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.track-table.jsx-3762652932 tbody {
+    position: relative !important;
+}
+
+.track-table.jsx-3762652932 tbody tr.jsx-3762652932 {
+    transition: background-color 0.15s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    padding-left: 13px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.track-table.jsx-3762652932 tbody tr.jsx-3762652932:last-of-type td.jsx-3762652932,
+.track-table.jsx-3762652932 tbody tr.jsx-3762652932:last-of-type th.jsx-3762652932 {
+    border-bottom: none;
+}
+
+.track-table.jsx-3762652932 tbody tr.jsx-3762652932 td.jsx-3762652932,
+.track-table.jsx-3762652932 tbody tr.jsx-3762652932 th.jsx-3762652932 {
+    border-bottom: 1px solid rgb(39, 39, 39);
+    color: rgb(250, 250, 250);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    padding: 10px 5px;
+    text-align: left;
+    vertical-align: middle;
+    max-width: 30vw;
+}
+
+@media (max-width: 768px) {
+
+    .track-table.jsx-3762652932 tbody tr.jsx-3762652932 td.jsx-3762652932,
+    .track-table.jsx-3762652932 tbody tr.jsx-3762652932 th.jsx-3762652932 {
+        max-width: 40vw;
+    }
+}
+
+.handle .arrow {
+    margin-left: 3px;
+    transition: stroke 0.2s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+}
+
+.handle:hover .arrow {
+    stroke: rgb(251, 171, 126) !important;
+}
+
+.sort-icon.jsx-2248658821:not(.disabled):hover {
+    color: rgb(251, 171, 126);
+    filter: drop-shadow(rgb(251, 171, 126) 0px 0px 4px);
+}
+
+.sort-icon.jsx-2248658821 {
+    transition: color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    cursor: pointer;
+    color: rgba(170, 170, 170, 0.7);
+    height: 28px;
+}
+
+input[type="range"].jsx-1282691469 {
+    appearance: none;
+    margin: 0px;
+    width: 250px;
+    height: 20px;
+    background: none;
+}
+
+input[type="range"].jsx-1282691469:focus {
+    outline: 0px;
+}
+
+.tuning-slider.jsx-4244692456 {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.tuning-item.jsx-4244692456 {
+    min-height: 70px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px;
+}
+
+.toggle-text-button.jsx-2146970143 {
+    outline: none;
+    font-weight: bold;
+    transition: color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, text-shadow 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.toggle-text-button.jsx-2146970143:hover {
+    color: rgb(34, 34, 34);
+    text-shadow: rgb(34, 34, 34) 0px 0px 0px;
+}
+
+sup.sharp {
+    width: 11.2px;
+}
+
+.key-item {
+    font-weight: bold;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    transition: color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, text-shadow 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    cursor: pointer;
+    color: rgba(170, 170, 170, 0.7);
+}
+
+.key-item span.sharp {
+    margin-right: -11.2px;
+}
+
+.key-item:not(.disabled):hover {
+    color: rgb(251, 171, 126);
+    text-shadow: rgb(251, 171, 126) 0px 0px 4px;
+}
+
+.key-row {
+    width: 253.333px;
+    height: 35px;
+}
+
+.key-selector.jsx-813543602 {
+    padding-top: 1rem;
+}
+
+.tuning-item.jsx-813543602 {
+    min-height: 70px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px;
+}
+
+.rounded-button.jsx-4189772055 {
+    outline: none;
+    transition: background-color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, box-shadow 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, width 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, height 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, transform 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    background-color: rgb(28, 28, 28);
+    color: rgb(250, 250, 250);
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: rgba(28, 28, 28, 0.4) 0px 2px 10px;
+    border-color: transparent;
+    padding: 1rem 3rem;
+}
+
+.rounded-button.jsx-4189772055:hover,
+.rounded-button.jsx-4189772055:focus {
+    filter: brightness(130%);
+    box-shadow: rgba(28, 28, 28, 0.5) 0px 3px 10px;
+    background-color: rgb(28, 28, 28);
+    color: rgb(250, 250, 250);
+}
+
+.rounded-button.disabled.jsx-4189772055,
+.rounded-button.jsx-4189772055:hover.disabled,
+.rounded-button.jsx-4189772055:focus.disabled {
+    filter: none;
+    cursor: auto;
+    box-shadow: none;
+    background-color: transparent;
+    color: rgb(28, 28, 28);
+    border: 1px solid rgb(28, 28, 28);
+}
+
+.sidebar-content.jsx-3886461859 {
+    margin-bottom: 70px;
+    width: 100%;
+    min-height: min-content;
+}
+
+.sidebar.jsx-3886461859 {
+    overflow: hidden scroll;
+    min-height: 100vh;
+    max-height: 100vh;
+    height: 100vh;
+    border-left: 1px solid rgba(170, 148, 131, 0.1);
+    background-color: rgb(225, 225, 225);
+    color: rgb(28, 28, 28);
+    padding: 1rem;
+}
+
+.play-button {
+    opacity: 0.9;
+    transition: transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, opacity 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.play-button:hover,
+.play-button:focus {
+    opacity: 1;
+    filter: none;
+    transform: scale(1.05);
+}
+
+.close-button:focus {
+    filter: brightness(150%);
+    transform: scale(1.1);
+    transition: color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, transform 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.spinner.jsx-1566751181 {
+    text-align: center;
+}
+
+.spinner.jsx-1566751181>div.jsx-1566751181 {
+    display: inline-block;
+    backface-visibility: hidden;
+    will-change: transform;
+    animation: 1.4s ease-in-out 0s infinite normal both running sk-bouncedelay-jsx-1566751181;
+}
+
+.spinner.jsx-1566751181 .bounce1.jsx-1566751181 {
+    animation-delay: -0.32s;
+}
+
+.spinner.jsx-1566751181 .bounce2.jsx-1566751181 {
+    animation-delay: -0.16s;
+}
+
+.rounded-button.jsx-311455344 {
+    outline: none;
+    transition: background-color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, box-shadow 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, filter 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, width 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, height 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, transform 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    background-color: rgb(28, 202, 74);
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: rgba(28, 28, 28, 0.4) 0px 2px 10px;
+    border-color: transparent;
+    padding: 1rem 3rem;
+}
+
+.rounded-button.jsx-311455344:hover,
+.rounded-button.jsx-311455344:focus {
+    filter: brightness(115%);
+    box-shadow: rgba(28, 28, 28, 0.5) 0px 3px 10px;
+    background-color: rgb(28, 202, 74);
+    color: rgb(255, 255, 255);
+}
+
+.devices-drawer::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    overflow: initial;
+}
+
+#waiting-devices-text.jsx-2063635812 {
+    font-size: 1.5rem;
+}
+
+.controls::-webkit-scrollbar {
+    display: none;
+}
+
+.button-container.jsx-854853800 {
+    height: 80px;
+    background: linear-gradient(to top, rgb(28, 28, 28) 0%, transparent 100%);
+}
+
+.controls.jsx-854853800 {
+    overflow: hidden;
+    z-index: 1;
+}
+
+/*! CSS Used fontfaces */
+@font-face {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/mukta/v12/iJWKBXyXfDDVXbnArXyi0A.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+
+@font-face {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/mukta/v12/iJWKBXyXfDDVXbnPrXyi0A.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/mukta/v12/iJWKBXyXfDDVXbnBrXw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 600;
+    src: url(https://fonts.gstatic.com/s/mukta/v12/iJWHBXyXfDDVXbEeiWmc8WDm7Q.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+
+@font-face {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 600;
+    src: url(https://fonts.gstatic.com/s/mukta/v12/iJWHBXyXfDDVXbEeiWmT8WDm7Q.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 600;
+    src: url(https://fonts.gstatic.com/s/mukta/v12/iJWHBXyXfDDVXbEeiWmd8WA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url("https://www.noiseblend.com/static/fonts/Futura/Futura-Bold-Condensed.woff") format('woff');
+    src: local('Futura-Bold-Condensed');
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url("https://www.noiseblend.com/static/fonts/Futura/Futura-Bold.woff2") format('woff2'), url("https://www.noiseblend.com/static/fonts/Futura/Futura-Bold.woff") format('woff');
+    src: local('Futura-Bold');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url("https://www.noiseblend.com/static/fonts/Futura/Futura-CondensedExtraBold.woff2") format('woff2'), url("https://www.noiseblend.com/static/fonts/Futura/Futura-CondensedExtraBold.woff") format('woff');
+    src: local('Futura-CondensedExtraBold');
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url("https://www.noiseblend.com/static/fonts/Futura/Futura-CondensedMedium.woff2") format('woff2'), url("https://www.noiseblend.com/static/fonts/Futura/Futura-CondensedMedium.woff") format('woff');
+    src: local('Futura-CondensedMedium');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url("https://www.noiseblend.com/static/fonts/Futura/Futura-Medium.woff2") format('woff2'), url("https://www.noiseblend.com/static/fonts/Futura/Futura-Medium.woff") format('woff');
+    src: local('Futura-Medium');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url("https://www.noiseblend.com/static/fonts/Futura/Futura-MediumItalic.woff2") format('woff2'), url("https://www.noiseblend.com/static/fonts/Futura/Futura-MediumItalic.woff") format('woff');
+    src: local('Futura-MediumItalic');
+    font-weight: normal;
+    font-style: italic;
+}

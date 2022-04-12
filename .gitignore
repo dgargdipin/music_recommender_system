@@ -132,7 +132,7 @@ venv.bak/
 # Spyder project settings
 .spyderproject
 .spyproject
-
+template_example/
 # Rope project settings
 .ropeproject
 

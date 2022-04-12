@@ -44,9 +44,36 @@ class Timerange(enum.Enum):
 
 def get_profile_data(auth_headers):
     profile_response = requests.get(user_profile_api_endpoint, headers=auth_headers)
+
     print(profile_response.text)
     return json.loads(profile_response.text)
+def chunks(lst, n):
+    """Yield successive n-sized chunks from lst."""
+    for i in range(0, len(lst), n):
+        yield lst[i:i + n]
 
+def get_track_info(song_list,auth_headers):
+    
+    chunked_list=list(chunks(song_list,50))
+    song_data=[]
+    for song_list in chunked_list:
+        song_id_list = ""
+        print("Getting song info of ",len(song_list))
+        for song in song_list:
+            song_id_list += song["id"] + ","
+        feature_url = "{}/tracks".format(SPOTIFY_API_URL)
+        print("Song ids",song_id_list)
+        query_param = {"ids": song_id_list[:-1]}
+        response = requests.get(feature_url, headers=auth_headers, params=query_param)
+        print(response.text)
+        feature_data = json.loads(response.text)
+        song_data.append(feature_data)
+        
+        # print(feature_data)
+    print(song_data)
+    with open("rec_song_data.json", "w") as f:
+            json.dump(song_data, f)
+    return song_data
 
 def get_audio_features(song_list, auth_headers):
     song_id_list = ""
@@ -60,7 +87,7 @@ def get_audio_features(song_list, auth_headers):
 
 def parse_year(year):
     return int(year[:4])
-def get_top_songs(auth_headers,timerange=Timerange.MEDIUM_TERM):
+def get_top_songs(auth_headers,timerange=Timerange.LONG_TERM):
     top_songs_url = "{}/top/tracks".format(user_profile_api_endpoint)
     query_params = {"time_range": timerange.value}
 
@@ -140,21 +167,22 @@ def callback():
         token_type = response_data["token_type"]
         expires_in = response_data["expires_in"]
     except:
-        print(response_data)
+        # print(response_data)
         return "Not found", 400
 
     # Auth Step 6: Use the access token to access Spotify API
     authorization_header = {"Authorization": "Bearer {}".format(access_token)}
-
+    print(access_token)
     # Get profile data
     profile_data = get_profile_data(auth_headers=authorization_header)
     top_songs = get_top_songs(auth_headers=authorization_header)
+    
     with open("data.json", "w") as f:
         json.dump(top_songs, f)
     rec_songs=recommend_songs(top_songs)
+    rec_song_data=get_track_info(rec_songs,auth_headers=authorization_header)
     # Combine profile and playlist data to display
-    display_arr = [profile_data] + [rec_songs]
-    return render_template("index.html", sorted_array=display_arr)
+    return render_template("index.html", profile=profile_data,songs=rec_song_data[0]["tracks"])
 
 
 if __name__ == "__main__":

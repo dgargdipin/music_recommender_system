@@ -37,11 +37,14 @@ metadata_cols = ['name', 'year', 'artists']
 song_cluster_pipeline=None
 def train_model():
     global song_cluster_pipeline
-    if os.path.exists(KMEANSFILENAME) and song_cluster_pipeline is None:
-        print("AAA")
+
+    if song_cluster_pipeline is not None:
+        return
+    if os.path.exists(KMEANSFILENAME):
         with open(KMEANSFILENAME, "rb") as f:
             song_cluster_pipeline = pickle.load(f)
         return
+    
     song_cluster_pipeline = Pipeline(
         [
             ("scaler", StandardScaler()),
@@ -49,10 +52,9 @@ def train_model():
         ],
         verbose=True,
     )
-    X = spotify_data.select_dtypes(np.number)
 
-    number_cols = list(X.columns)
-    print(X.columns)
+    X = spotify_data[number_cols]
+
     song_cluster_pipeline.fit(X)
     with open(KMEANSFILENAME, "wb") as f:
         pickle.dump(song_cluster_pipeline, f)
@@ -86,12 +88,14 @@ def recommend_songs(song_list):
     song_name_list = [a["song_name"] for a in song_list]
     rec_song_groups=[]
     for index, row in grouped_mean_df.iterrows():
+        print(type(row))
         rec_song_groups+=predict_for_mean(row, song_name_list)
+        
     return rec_song_groups
     
 
 def predict_for_mean(song_center,song_name_list):
-    metadata_cols = ['name', 'year', 'artists']
+    metadata_cols = ['name', 'year', 'artists','id']
     global song_cluster_pipeline
     scaler = song_cluster_pipeline.steps[0][1]
     scaled_data = scaler.transform(spotify_data[number_cols])
